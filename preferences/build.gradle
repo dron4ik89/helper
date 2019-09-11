@@ -3,7 +3,7 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 //apply plugin: 'com.github.dcendents:android-maven-gradle'
 group='andrey.shpilevoy'
-version='0.0.1'
+version='0.0.2'
 
 //apply plugin: "com.jfrog.artifactory"
 

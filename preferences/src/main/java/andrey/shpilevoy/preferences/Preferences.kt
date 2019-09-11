@@ -13,6 +13,10 @@ class Preferences { // Класс для хранения данных на ус
             pref = context.getSharedPreferences(context.packageName, 0)
         }
 
+        fun init(context : Context, name : String){
+            pref = context.getSharedPreferences(name, 0)
+        }
+
         fun save(key: String, value: Boolean) {
             if(pref != null)
                 pref!!.edit().putBoolean(key, value).apply()
@@ -71,6 +75,10 @@ class Preferences { // Класс для хранения данных на ус
         fun load(key: String, defaultValue: Set<String>): Set<String> {
             return (if(pref != null) pref?.getStringSet(key, defaultValue)
             else defaultValue) as Set<String>
+        }
+
+        fun cancel(){
+            pref?.edit()?.clear()
         }
 
     }
