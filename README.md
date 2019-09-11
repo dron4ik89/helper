@@ -9,4 +9,4 @@ allprojects {
 
  SharedPreferences
  
-implementation 'com.github.dron4ik89:preferences:0.0.1'
+implementation 'com.github.dron4ik89:preferences:0.0.2'
