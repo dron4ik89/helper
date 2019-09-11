@@ -1,1 +1,1 @@
-include ':app', ':preferences', ':http_client'
+include ':app', ':preferences'
