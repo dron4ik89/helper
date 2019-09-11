@@ -31,7 +31,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
+    implementation "org.jetbrains.anko:anko:0.10.8"
 
     implementation project(path: ':preferences')
+    implementation project(path: ':http_client')
+
 }
