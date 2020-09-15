@@ -57,6 +57,16 @@ class Preferences { // Класс для хранения данных на ус
             else defaultValue
         }
 
+        fun save(key: String, value: Double) {
+            if(pref != null)
+                pref!!.edit().putString(key, "$value").apply()
+        }
+
+        fun load(key: String, defaultValue: Double): Double {
+            return if(pref != null) (pref!!.getString(key, "$defaultValue") ?: "$defaultValue").toDouble()
+            else defaultValue
+        }
+
         fun save(key: String, value: String) {
             if(pref != null)
                 pref!!.edit().putString(key, value).apply()
